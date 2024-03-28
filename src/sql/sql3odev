@@ -16,7 +16,8 @@ SELECT country FROM country
 WHERE LENGTH(country) >= 6 AND country LIKE '%n';
 
 SELECT title FROM film
-WHERE title ILIKE '&t&t%t%t%';
+WHERE (title ILIKE '%t%t%t%t%');
+
 
 SELECT * FROM film
 WHERE title LIKE 'C%'
